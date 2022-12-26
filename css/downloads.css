@@ -1,0 +1,80 @@
+@import "/css/shared.css";
+
+/* ============================= 
+    Geral Configs
+   ============================= */
+
+h1 {
+    margin-bottom: 4px;
+}
+
+p {
+    font-size: 0.9rem;
+}
+
+#description {
+    margin: 0 0 20px 0;
+}
+
+h3 {
+    padding: 1%;
+}
+
+#menu-item:nth-child(5){
+    background-color: #551111;
+}
+
+/* ============================= 
+    Cards
+   ============================= */
+
+details {
+    background-color: var(--secondary-smoke-black);
+    padding: 12px;
+    border-radius: 4px;
+    width: 70%;
+    margin-bottom: 15px;
+}
+
+details summary {
+    cursor: pointer;
+}
+
+details>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3a3a3a;
+    padding: 5px;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+details p, details .download-btn {
+    font-size: 14px;
+    margin: 10px;
+}
+
+.download-btn {
+    background-color: var(--secondary-lemon-green);
+    background-image: radial-gradient(100% 100% at 100% 0, var(--secondary-lemon-green) 0, #20aa18 100%);
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px;
+    padding: 5px;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 6px;
+    color: #111;
+    font-weight: 500;
+    transition: .2s;
+    cursor: pointer;
+    user-select: none;
+}
+
+.download-btn:hover {
+    transform: scale(1.04);
+    color: #eee;
+}
+
+.download-btn:active {
+    transform: scale(0.98);
+}

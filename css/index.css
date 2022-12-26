@@ -1,6 +1,57 @@
-#class {
-    width: 22px;
-    width: 22px;
-    width: 22px;
-    width: 22px;
+@import "./shared.css";
+
+section {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+h1 {
+    color: var(--main-white);
+    margin: 20px 0;
+}
+
+p {
+    color: #ccc;
+    font-size: 1rem;
+}
+
+#menu-item:nth-child(1){
+    background-color: #551111;
+    border-radius: 0 0 0 10px;
+}
+
+/* =======================
+    Card
+   ======================= */
+
+.card {
+    position: relative;
+    width: 50%;
+    height: 200px;
+    border-radius: 8px;
+    margin: 20px 0;
+    padding: 10px;
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    border: 1px solid var(--secondary-red);
+    box-shadow: 0 0 6px var(--secondary-red);
+}
+
+.card-title p {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+main {
+    width: 85%;
+    margin: auto;
+    align-items: start;
 }
